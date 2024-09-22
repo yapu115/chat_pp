@@ -1,0 +1,7 @@
+{
+  "name": "chatPP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

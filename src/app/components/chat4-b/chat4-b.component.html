@@ -1,0 +1,30 @@
+<div class="body">
+  <div class="chat-container">
+    <div class="chat-body" #chatBody>
+      @for (mensaje of mensajes; track mensajes) { @if
+      (mensaje.verificarUsuario(this.auth.usuario.email)){
+      <div class="message sent">
+        <p>{{ mensaje.contenido }}</p>
+        <span class="time"> {{ mensaje.obtenerFecha() }}</span>
+      </div>
+
+      } @else {
+      <div class="message received">
+        <p class="user-name">{{ mensaje.nombre }}</p>
+        <p>{{ mensaje.contenido }}</p>
+        <span class="time"> {{ mensaje.obtenerFecha() }}</span>
+      </div>
+      } }
+    </div>
+
+    <div class="chat-footer">
+      <input
+        [(ngModel)]="mensajeInput"
+        type="text"
+        placeholder="Escribe un mensaje..."
+        class="input-message"
+      />
+      <button (click)="EnviarMensaje()">Enviar</button>
+    </div>
+  </div>
+</div>

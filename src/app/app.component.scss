@@ -1,0 +1,37 @@
+ion-toolbar {
+  --background: #242424; /* Puedes cambiar el color de la barra */
+  --color: #ff6d00; /* Color del texto y los iconos */
+}
+
+ion-button {
+  font-weight: 700;
+}
+ion-button::after {
+  --background: #515050;
+}
+
+ion-buttons {
+  border-radius: 30px;
+}
+
+.iob {
+  width: 200px;
+}
+
+ion-icon {
+  margin-left: 15px; /* Espacio entre el icono y el texto */
+  margin-bottom: 3px;
+}
+
+p {
+  margin-left: 110px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.a {
+  color: #7b2cbf;
+}
+
+.b {
+  color: #ff9e00;
+}

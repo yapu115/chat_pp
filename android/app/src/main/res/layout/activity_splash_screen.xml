@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/main"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#636266
+"
+  tools:context=".SplashScreen">
+
+
+  <ImageView
+    android:id="@+id/color1"
+    android:layout_width="1100dp"
+    android:layout_height="1600dp"
+    android:layout_marginStart="80dp"
+    android:layout_marginBottom="0dp"
+    android:rotation="-29"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:srcCompat="@drawable/purplesquare" />
+
+  <ImageView
+    android:id="@+id/color2"
+    android:layout_width="1600dp"
+    android:layout_height="1100dp"
+    android:layout_marginTop="250dp"
+    android:layout_marginEnd="-170dp"
+    android:rotation="-29"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/yellowsquare" />
+
+
+  <View
+    android:id="@+id/diagonalLine"
+    android:layout_width="1dp"
+    android:layout_height="2000dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:background="#000000"
+    android:rotation="-29"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.5"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.5" />
+
+
+  <TextView
+    android:id="@+id/Division"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_marginStart="40dp"
+    android:layout_marginEnd="120dp"
+    android:layout_marginBottom="32dp"
+    android:fontFamily="@font/lemon"
+    android:rotation="45"
+    android:text="División: A141-2"
+    android:textColor="#3C096C"
+    android:textSize="60sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.25"
+    app:layout_constraintStart_toStartOf="parent" />
+
+  <TextView
+    android:id="@+id/Nombre"
+    android:layout_width="400dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="104dp"
+    android:layout_marginTop="124dp"
+    android:fontFamily="@font/lemon"
+    android:rotation="45"
+    android:text="Franco Yapura"
+    android:textColor="#FF7900"
+    android:textSize="70sp"
+    android:textStyle="bold|italic"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <ImageView
+    android:id="@+id/Logo_Foreground"
+    android:layout_width="197dp"
+    android:layout_height="255dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/backgroundonly" />
+
+  <ImageView
+    android:id="@+id/logo1"
+    android:layout_width="114dp"
+    android:layout_height="141dp"
+    android:layout_marginStart="42dp"
+    android:layout_marginTop="57dp"
+    android:layout_marginEnd="42dp"
+    android:layout_marginBottom="57dp"
+    app:layout_constraintBottom_toBottomOf="@+id/Logo_Foreground"
+    app:layout_constraintEnd_toEndOf="@+id/Logo_Foreground"
+    app:layout_constraintStart_toStartOf="@+id/Logo_Foreground"
+    app:layout_constraintTop_toTopOf="@+id/Logo_Foreground"
+    app:srcCompat="@drawable/globo2" />
+
+  <ImageView
+    android:id="@+id/logo2"
+    android:layout_width="116dp"
+    android:layout_height="164dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="27dp"
+    android:layout_marginEnd="50dp"
+    android:layout_marginBottom="63dp"
+    app:layout_constraintBottom_toBottomOf="@+id/Logo_Foreground"
+    app:layout_constraintEnd_toEndOf="@+id/Logo_Foreground"
+    app:layout_constraintStart_toStartOf="@+id/Logo_Foreground"
+    app:layout_constraintTop_toTopOf="@+id/Logo_Foreground"
+    app:srcCompat="@drawable/globo1" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

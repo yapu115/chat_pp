@@ -1,0 +1,48 @@
+<div class="body">
+  <div class="main">
+    <input type="checkbox" id="chk" aria-hidden="true" />
+
+    <div class="signup">
+      <form [formGroup]="formInicioSesion">
+        <label for="chk" aria-hidden="true">¡Bienvenido!</label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo"
+          formControlName="email"
+        />
+        @if (mailError){
+        <div class="error-message">
+          <p>{{ mensajeMail }}</p>
+        </div>
+        }
+        <input
+          type="password"
+          placeholder="Contraseña"
+          required=""
+          name="contrasena"
+          formControlName="contrasena"
+        />
+        @if (contrasenaError){
+        <div class="error-message">
+          <p>{{ mensajeContrasena }}</p>
+        </div>
+        }
+        <button (click)="IniciarSesion()">Iniciar Sesión</button>
+        @if (usuarioNoEncontrado){
+        <div class="error-message">
+          <p>{{ mensajeUsuario }}</p>
+        </div>
+        }
+      </form>
+    </div>
+
+    <div class="login">
+      <div>
+        <label for="chk" aria-hidden="true">Usuarios</label>
+        <button (click)="IniciarAlejandro()" type="button">Alejandro</button>
+        <button (click)="IniciarBerenice()">Berenice</button>
+      </div>
+    </div>
+  </div>
+</div>

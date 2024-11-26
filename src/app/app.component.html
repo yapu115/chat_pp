@@ -1,3 +1,30 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-router-outlet> </ion-router-outlet>
+  @if (this.auth.usuario !== null){
+  <ion-header>
+    <ion-toolbar>
+      @if (!this.auth.antesDeSesion){
+      <ion-buttons slot="start">
+        <ion-button (click)="Volver()">
+          <ion-icon name="arrow-back-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      } @if (this.auth.chatActual === "4a"){
+      <p class="a">Sala 4-A</p>
+      } @else if (this.auth.chatActual === "4b"){
+      <p class="b">Sala 4-B</p>
+      } @else {
+      <ion-buttons slot="end">
+        <ion-button class="iob" (click)="CerrarSesion()">
+          Cerrar sesión
+          <ion-icon name="log-out-outline"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+
+      }
+    </ion-toolbar>
+  </ion-header>
+
+  }
 </ion-app>
